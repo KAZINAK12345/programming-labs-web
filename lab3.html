@@ -40,11 +40,24 @@
                 margin-left: 2cm;
                 text-indent: 0;
             }
+            .shadow {
+                text-shadow: 3px 2px 3px blue;
+            }
+            .blue-shadow {
+                text-shadow: -5px 5px;
+            }
+            .razm {
+                text-shadow: 0 0 3px blue;
+            }
             header {
                 background: linear-gradient(to right bottom, darkblue, darkviolet, green, orange);
                 color: lightgreen;
                 padding: 10px;
                 font-size: 16px;
+            }
+            .rasch:hover {
+                text-shadow: 3px 3px 2px darkviolet;
+                transition: 600ms 1s;
             }
         </style>
     </head>
@@ -54,7 +67,7 @@
         </header>
 
         <main>
-           <h1> Расчет (формула)</h1>
+           <h1 class="rasch"> Расчет (формула)</h1>
 <div>
     Расчет сводится к определению разницы между активами и пассивами
 (обязательствами), которые определяются следующим образом.
@@ -108,7 +121,9 @@
 <div class="formula">
     Чистые активы = стр.1300 - ЗУ + ДБП
 </div>
-
+<div class="shadow">Тень</div>
+<div class="blue-shadow">Синяя тень слева снизу</div>
+<div class="razm">Синее размытие</div>
         </main>
 
         <footer>
