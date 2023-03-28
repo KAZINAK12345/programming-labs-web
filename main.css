@@ -22,6 +22,8 @@ footer {
 a {
     color: green;
     text-decoration: none;
+    transition: 1.5s 1.5s;
+    text-shadow: 2px 2px 2px gray;
 }
 
 a:hover {
@@ -29,6 +31,8 @@ color: red;
 text-decoration: underline;
 background-color: white;
 font-weight: bold;
+text-shadow: 5px 5px 3px maroon;
+transition: 300ms 1.5s;
 }
 
 a:active {
