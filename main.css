@@ -5,18 +5,39 @@ body {
     margin: 0px;
 }
 
-header {background-color: black;
+header {
+background-image: linear-gradient(to right, blue, darkviolet);
 color: lightgreen;
 padding: 10px;
 font-size: 16px;
+transition: 6s;
+}
+
+header:hover {
+    background: linear-gradient(to right top, blue, darkblue, violet, darkviolet);
+    color: black; 
+    padding: 10px; 
+    font-size: 20pt;
+    font-weight: bold;
+    transition: 1s ;
 }
 
 footer {
-    background-color: black;
+    background-image: linear-gradient(to right, violet, darkblue);
     color: lightgreen;
     padding: 10px;
     font-size: 16px;
     text-align: right;
+    transition: 6s;
+}
+
+footer:hover {
+    background: linear-gradient(to right bottom, blue, darkblue, violet, darkviolet);
+    color: black; 
+    padding: 10px; 
+    font-size: 20pt;
+    font-weight: bold;
+    transition: 1s;
 }
 
 a {
