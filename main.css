@@ -29,6 +29,9 @@ footer {
     font-size: 16px;
     text-align: right;
     transition: 6s;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer:hover {
