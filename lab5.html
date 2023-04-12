@@ -6,6 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Долбик Артём Евгеньевич. Лабораторная 5</title>
         <link rel="stylesheet" href="main.css">
+        <script>
+            function showSum() {
+                let a = 5154;
+                let b = 7891;
+                let result = a + b;
+                alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
+            }
+
+        </script>
+        <style>
+            .message {
+                width: 200px;
+                height: 30px;
+                background-color: darkblue;
+                border: solid;
+                border-radius: 7px;
+                display: inline-block;
+                color: orange;
+                padding: 5px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+
+        </style>
     </head>
 
     <body>
@@ -14,6 +39,8 @@
         </header>
 
         <main>
+            <div class="message" onclick="showSum()">Сколько будет 5154+7891</div>
+            <div class="message">Узнать кто автор страницы</div>
         </main>
 
         <footer>
