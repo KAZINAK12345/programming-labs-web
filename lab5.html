@@ -50,6 +50,25 @@
                 output.style.color = textColor;
                 output.style.textAlign = textAlign;
             }
+            function showPrice() {
+                let inputApples = document.getElementById("numberApples");
+                let inputPears = document.getElementById("numberPears");
+                let inputOranges = document.getElementById("numberOranges");
+                let inputMelons = document.getElementById("numberMelons");
+
+                let a = parseInt(inputApples.value);
+                let b = parseInt(inputPears.value);
+                let c = parseInt(inputOranges.value);
+                let d = parseInt(inputMelons.value);
+
+                let price = 100 * a + 80 * b + 150 * c + 300 * d;
+                let output = document.getElementById('price');
+                output.innerHTML = "Общая цена:" + price + "р" 
+            }
+            function showCircle(id) {
+                let g = document.getElementById(id);
+                g.style.display = 'none';
+            }
         </script>
         <style>
             .message {
@@ -65,13 +84,21 @@
                 cursor: pointer;
             }
 
-            #output {
+            .output {
                 border: 1px solid;
                 width: 300px;
                 height: 40px;
             }
 
-
+            .Circle {
+                height: 50px;
+                width: 50px;
+                border: 1px solid;
+                border-radius: 100px;
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+            }
         </style>
     </head>
 
@@ -97,6 +124,35 @@
             </div>
 
             <div id="output"></div>
+
+            <div class="korzina">
+                <h1>Корзина товаров</h1><br>
+                <label>Яблоки (100р/шт):</label><br>
+                <input type="number" id="numberApples"><br>
+
+                <label>Груши (80р/шт):</label><br>
+                <input type="number" id="numberPears"><br>
+
+                <label>Апельсины (150р/шт):</label><br>
+                <input type="number" id="numberOranges"><br>
+
+                <label>Арбузы (300р/шт):</label><br>
+                <input type="number" id="numberMelons"><br>
+
+                <input type="button" value="Рассчитать" onclick="showPrice()">
+                <div id="price"></div>
+            </div>
+
+            <div class="Circle" style="background-color: darkblue;" id="a1" onclick="showCircle('a1')"><b>1</b></div>
+            <div class="Circle" style="background-color: green;" id="a2" onclick="showCircle('a2')"><b>2</b></div>
+            <div class="Circle" style="background-color: purple;" id="a3" onclick="showCircle('a3')"><b>3</b></div>
+            <div class="Circle" style="background-color: sienna;" id="a4" onclick="showCircle('a4')"><b>4</b></div>
+            <div class="Circle" style="background-color: black;" id="a5" onclick="showCircle('a5')"><b>5</b></div>
+            <div class="Circle" style="background-color: coral;" id="a6" onclick="showCircle('a6')"><b>6</b></div>
+            <div class="Circle" style="background-color: hotpink;" id="a7" onclick="showCircle('a7')"><b>7</b></div>
+            <div class="Circle" style="background-color: lawngreen;" id="a8" onclick="showCircle('a8')"><b>8</b></div>
+            <div class="Circle" style="background-color: aquamarine;" id="a9" onclick="showCircle('a9')"><b>9</b></div>
+            <div class="Circle" style="background-color: firebrick;" id="a10" onclick="showCircle('a10')"><b>10</b></div>
         </main>
 
         <footer onclick="showAuthor()">
