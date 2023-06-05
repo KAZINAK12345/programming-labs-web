@@ -24,3 +24,7 @@ function showDaysCount() {
     daysCount = Math.floor(daysCount);
     out.innerHTML = 'Количество дней с дня рождения ' + daysCount;
 }
+function Otchistit() {
+    let out = document.getElementById('Days')
+    out.innerHTML = ' ';
+}
