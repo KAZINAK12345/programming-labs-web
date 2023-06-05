@@ -82,6 +82,18 @@
                 circles.appendChild(newCircles);
             }
         }
+        function tableUmnozheniya() {
+            let stud = 19;
+            let newTable = document.getElementById('tableOfUmno');
+
+            for (let i = 13; i<=43; i++) {
+                let newTr = document.createElement('tr');
+                let newTd = document.createElement('td');
+                newTd.innerHTML = stud + '*' + i + '=' + (stud * i)
+                newTr.appendChild(newTd);
+                newTable.appendChild(newTr)
+            }
+        }
     </script>
 </head>
 
@@ -105,3 +117,6 @@
             <input id='inpNum' type='number' value='5' placeholder='введите число кругов'>
             <button onclick="blueOrange()">Синее/Оранжевое</button>
             <div id="circles"></div>
+
+            <button id="currentTable" onclick="tableUmnozheniya()">Таблица умножения</button>
+            <table border="1" id="tableOfUmno"></table>
