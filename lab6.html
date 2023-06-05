@@ -49,6 +49,15 @@
             line-height: 150px;
             cursor: pointer;
         }
+        #Bigblock {
+            width: 100px;
+            cursor: pointer;
+            background-color: aquamarine;
+            margin-top: 200px;
+            text-align: center;
+            border: 5px solid darkviolet;
+            border-radius: 10px;
+        }
         </style>
         <script>
          let count = 0
@@ -147,6 +156,17 @@
                 block.style.left = "0"; 
             }
         }
+
+        function increaseWidth() {
+            const block = document.getElementById("Bigblock");
+            const currentWidth = parseInt(block.style.width);
+            const newWidth = currentWidth + 50;
+            if (newWidth <= 1000) {
+                block.style.width = newWidth + "px";
+            } else {
+                block.style.width = "100px";
+            }
+        }
         </script>
     </head>
 
@@ -207,6 +227,8 @@
             </div>
 
             <div id="movingblock" onclick="moveBlock()">Щёлкни меня</div>
+
+            <div id="Bigblock" onclick="increaseWidth()">Увеличение</div>
 
         </main>
 
