@@ -13,11 +13,19 @@
             НГТУ, ФБ, Лабораторная работа 8
         </header>
         <main>
-            <div id="current-date"></div>
-            <div id="current-date2"></div>
-            <div id="current-date3"></div>
-            <div id="current-date4"></div>
-            <div id="current-date5"></div>
+            <span>Дата и время для русской локали<div id="current-date"></div></span><br>
+            <span>Дата и время для немецкой локали<div id="current-date2"></div></span><br>
+            <span>Дата и время для испанской локали<div id="current-date3"></div></span><br>
+            <span>дата и время для японской локали<div id="current-date4"></div></span><br>
+            <span>Дата и время для шведской локали<div id="current-date5"></div></span><br>
+            <div>
+                <label>Дата рождения: <input type="date"></label>
+            </div>
+            <div>
+                <button onclick="showDaysCount()">Показать число дней</button>
+            </div>
+            <div id="Days">  
+            </div>
         </main>
         <footer>
             &copy; Долбик Артём, ФБИ-13, 2 курс, 2023
